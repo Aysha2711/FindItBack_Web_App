@@ -1,0 +1,80 @@
+.success-page {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.reject-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+.success-icon {
+  background-color: #4caf7d;
+  color: white;
+  font-size: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.reject-icon {
+  background-color: #af4c4c;
+  color: white;
+  font-size: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.success-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d6a4f;
+  margin-bottom: 10px;
+}
+
+.reject-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a2d2d;
+  margin-bottom: 10px;
+}
+
+.success-card p {
+  color: #40675e;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.reject-card p {
+  color: #674040;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+
+

@@ -1,0 +1,164 @@
+.item-detail-page {
+  padding: 40px 80px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f9fbff;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.item-detail-main {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.item-image-section {
+  flex: 0 0 420px;
+  max-width: 420px;
+}
+
+.lost-item-image {
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 992px) {
+  .item-detail-main {
+    flex-direction: column;
+  }
+
+  .item-image-section {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .lost-item-image {
+    height: 280px;
+  }
+}
+
+.claim-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.claim-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.claim-btn {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.claim-btn:hover {
+  background-color: #225dbb;
+  color: black;
+}
+
+.claim-note {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.item-info-section {
+  flex: 1;
+}
+
+.lost-label {
+  background-color: #f3d6d7;
+  color: #820303;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.item-info-section h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.item-info-list li {
+  margin-bottom: 8px;
+}
+
+.info-box {
+  background-color: #fff5dc;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.other-items-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.other-items-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.item-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.item-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.item-title {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.item-meta,
+.item-date {
+  font-size: 13px;
+  color: #777;
+}
+
+.view-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view-more-link {
+  color: #4285f4;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}

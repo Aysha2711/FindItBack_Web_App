@@ -1,0 +1,202 @@
+.claim-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  position: relative;
+}
+
+.back-btn-container {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.back-arrow-btn {
+  background: transparent;
+  border: none;
+  color: #475569;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.back-arrow-btn:hover {
+  color: #1e293b;
+  transform: translateX(-4px);
+}
+
+
+.claim-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.claim-header-title {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.claim-header-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+
+.item-cards {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  /* This ensures the card width matches the layout in your image */
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+
+
+/* 1. FIXED WIDTH IMAGE SECTION */
+.image-section {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  /* Hard-coding the width of the left column */
+  width: 280px;
+  flex-shrink: 0;
+  /* Important: prevents the right side from squishing this */
+  box-sizing: border-box;
+}
+
+/* 2. IDENTICAL IMAGE DIMENSIONS */
+.item-img {
+  width: 100%;
+  /* Fills the 280px container */
+  height: 180px;
+  /* Forced height */
+  object-fit: contain;
+  /* Crops to fit perfectly without stretching */
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* 3. BUTTON MATCHES IMAGE WIDTH */
+.review-btn {
+  width: 100%;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Right Section Alignment */
+.info-section {
+  padding: 20px 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-badge {
+  align-self: center;
+  /* Matches image: badge is centered */
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.item-title {
+  text-align: center;
+  /* Matches image: title is centered */
+  margin: 0 0 15px 0;
+  font-size: 1.3rem;
+  color: #1a1a1a;
+}
+
+.review-btn:hover {
+  background-color: #357abd;
+}
+
+/* Right Section: Details */
+
+
+.lost-label {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.found-label {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+
+
+.details-list p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.icon {
+  color: #333;
+  font-size: 14px;
+}
+
+.description-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.desc-icon {
+  margin-top: 4px;
+}
+
+.description-text {
+  font-size: 14px;
+  color: #555;
+  white-space: pre-line;
+  /* Keeps line breaks from the string */
+  margin: 0;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ef4444;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  z-index: 10;
+}
+
+.delete-icon:hover {
+  color: #b91c1c;
+  transform: scale(1.2);
+}

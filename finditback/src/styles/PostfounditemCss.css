@@ -1,0 +1,115 @@
+/* .found-form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.found-form-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e293b;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.section-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.found-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.found-form label {
+  font-weight: 600;
+  color: #1e293b;
+  display: flex;
+  gap: 5px;
+}
+
+.found-form input[type="text"],
+.found-form input[type="date"],
+.found-form select,
+.found-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  resize: none;
+}
+
+.found-form textarea {
+  min-height: 100px;
+}
+
+.upload-box {
+  border: 2px dashed #cbd5e1;
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.upload-box input[type="file"] {
+  display: none;
+}
+
+.upload-link {
+  display: block;
+  color: #2563eb;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.upload-note {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.image-hint {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  padding: 12px 18px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8;
+} */
+

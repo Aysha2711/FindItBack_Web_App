@@ -1,0 +1,100 @@
+-- 1. Users Table
+CREATE TABLE `users` (
+  `id` INTEGER NOT NULL AUTO_INCREMENT,
+  [name](cci:1://file:///d:/My%20documents/My%20works/react/project/project_initial/backend/routes/itemRoutes.js:16:4-20:5) VARCHAR(255) NOT NULL,
+  `email` VARCHAR(255) NOT NULL UNIQUE,
+  `password` VARCHAR(255) NOT NULL,
+  `phone_number` VARCHAR(255) DEFAULT NULL,
+  `createdAt` DATETIME NOT NULL,
+  `updatedAt` DATETIME NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- 2. Admins Table
+CREATE TABLE `admins` (
+  `id` INTEGER NOT NULL AUTO_INCREMENT,
+  `email` VARCHAR(255) NOT NULL UNIQUE,
+  `password` VARCHAR(255) NOT NULL,
+  `createdAt` DATETIME NOT NULL,
+  `updatedAt` DATETIME NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- 3. Lost Items Table
+CREATE TABLE `lost_items` (
+  `id` INTEGER NOT NULL AUTO_INCREMENT,
+  [name](cci:1://file:///d:/My%20documents/My%20works/react/project/project_initial/backend/routes/itemRoutes.js:16:4-20:5) VARCHAR(255) NOT NULL,
+  `category` VARCHAR(255) NOT NULL,
+  `date` DATE NOT NULL,
+  `area` VARCHAR(255) NOT NULL,
+  `description` TEXT,
+  `image` VARCHAR(255),
+  `exact_location` VARCHAR(255),
+  `contact_info` VARCHAR(255) NOT NULL,
+  `admin_notes` TEXT,
+  `status` VARCHAR(255) DEFAULT 'Pending',
+  `user_id` INTEGER,
+  `successful_claim_id` INTEGER,
+  `createdAt` DATETIME NOT NULL,
+  `updatedAt` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
+);
+
+-- 4. Found Items Table
+CREATE TABLE `found_items` (
+  `id` INTEGER NOT NULL AUTO_INCREMENT,
+  [name](cci:1://file:///d:/My%20documents/My%20works/react/project/project_initial/backend/routes/itemRoutes.js:16:4-20:5) VARCHAR(255) NOT NULL,
+  `category` VARCHAR(255) NOT NULL,
+  `date` DATE NOT NULL,
+  `area` VARCHAR(255) NOT NULL,
+  `description` TEXT,
+  `image` VARCHAR(255),
+  `exact_location` VARCHAR(255),
+  `contact_info` VARCHAR(255) NOT NULL,
+  `admin_notes` TEXT,
+  `status` VARCHAR(255) DEFAULT 'Pending',
+  `user_id` INTEGER,
+  `successful_claim_id` INTEGER,
+  `createdAt` DATETIME NOT NULL,
+  `updatedAt` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
+);
+
+-- 5. Verify Lost Claims (Claims on Lost Items - i.e., "I found your item")
+CREATE TABLE `verify_losts` (
+  `id` INTEGER NOT NULL AUTO_INCREMENT,
+  `lost_item_id` INTEGER NOT NULL,
+  `found_location` VARCHAR(255) NOT NULL,
+  `found_date` VARCHAR(255) NOT NULL,
+  `features` TEXT,
+  `proof_image` VARCHAR(255),
+  `story` TEXT,
+  `status` VARCHAR(255) DEFAULT 'Pending',
+  `user_id` INTEGER NOT NULL,
+  `createdAt` DATETIME NOT NULL,
+  `updatedAt` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`lost_item_id`) REFERENCES `lost_items` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- 6. Verify Found Claims (Claims on Found Items - i.e., "That item is mine")
+CREATE TABLE `verify_founds` (
+  `id` INTEGER NOT NULL AUTO_INCREMENT,
+  `found_item_id` INTEGER NOT NULL,
+  `full_name` VARCHAR(255) NOT NULL,
+  `lost_location` VARCHAR(255) NOT NULL,
+  `lost_date` VARCHAR(255) NOT NULL,
+  `features` TEXT,
+  `proof_image` VARCHAR(255),
+  `story` TEXT,
+  `status` VARCHAR(255) DEFAULT 'Pending',
+  `user_id` INTEGER NOT NULL,
+  `createdAt` DATETIME NOT NULL,
+  `updatedAt` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`found_item_id`) REFERENCES `found_items` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+);

@@ -1,0 +1,172 @@
+
+.vf-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.vf-container {
+  background: white;
+  max-width: 100;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vf-container .note {
+  margin-bottom: 24px;
+}
+
+.vf-container .item-card1 {
+  margin-bottom: 24px;
+}
+
+.vf-container .lost-form {
+  margin-bottom: 24px;
+}
+
+.vf-container .form-section {
+  margin-bottom: 0;
+}
+
+.vf-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.vf-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vf-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.vf-field label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.vf-field input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.vf-field input:focus {
+  border-color: #003366;
+  box-shadow: 0 0 4px rgba(0, 51, 102, 0.2);
+}
+
+.vf-note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.vf-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.vf-submit {
+  flex: 1;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.vf-submit:hover {
+  background-color: #002244;
+}
+
+.vf-cancel {
+  flex: 1;
+  padding: 10px;
+  background-color: #ccc;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.vf-cancel:hover {
+  background-color: #999;
+}
+
+.preview-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+}
+
+.preview-card {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.preview-image {
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+}
+
+.remove-preview-btn {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ececec;
+  background: #fff;
+  color: #c0392b;
+  font-size: 12px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.remove-preview-btn:hover {
+  background: #fff5f5;
+}
+
+.add-photo-btn {
+  margin-top: 10px;
+  border: 1px solid #007bff;
+  background: #fff;
+  color: #007bff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.add-photo-btn:hover {
+  background: #eaf3ff;
+}
+
+@media (max-width: 768px) {
+  .vf-container {
+    padding: 20px;
+  }
+
+  .vf-buttons {
+    flex-direction: column;
+  }
+}

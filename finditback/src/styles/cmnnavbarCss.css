@@ -1,0 +1,232 @@
+.navbar {
+  background-color: transparent;
+  color: #1C2A3A;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #2d3b4f;
+  text-decoration: none;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+  list-style: none;
+  /* Ensure no bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: #1C2A3A;
+  transition: all 0.2s;
+}
+
+.dropdown-content a:hover {
+  color: #60a5fa;
+  /* Light blue */
+  background-color: #f8fafc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Icon styles */
+.icon-btn {
+  cursor: pointer;
+}
+
+.nav-icon {
+  font-size: 22px;
+  color: #1C2A3A;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  color: #3B82F6;
+}
+
+
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  /* Ensure no bullets */
+  padding: 10px 0;
+  z-index: 1050;
+  margin: 0;
+}
+
+.profile-menu li {
+  padding: 10px 15px;
+  cursor: pointer;
+  list-style: none;
+  transition: all 0.2s;
+}
+
+.profile-menu li a {
+  text-decoration: none;
+  color: #1C2A3A;
+  display: block;
+}
+
+.profile-menu li:hover,
+.profile-menu li a:hover {
+  background: #f8fafc;
+  color: #60a5fa;
+  /* Light blue */
+}
+
+.profile-info {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-info span {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  color: gray;
+}
+
+/* Admin Toggle in Navbar */
+.admin-toggle-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-admin-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #f0f0f0;
+  transition: background 0.3s ease;
+}
+
+.nav-admin-toggle:hover {
+  background: #e0e0e0;
+}
+
+.nav-admin-toggle span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.nav-admin-toggle span.active {
+  color: #2c5282;
+  font-weight: 600;
+}
+
+.nav-toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-icon {
+  font-size: 24px;
+  color: #2c5282;
+  transition: transform 0.3s ease;
+}
+
+.nav-admin-toggle:hover .toggle-icon {
+  transform: scale(1.1);
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #1C2A3A;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 10px;
+    display: none;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .profile-menu {
+    position: relative;
+    top: 5px;
+    right: auto;
+    width: 100%;
+  }
+}

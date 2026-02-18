@@ -1,0 +1,12 @@
+.found-items-container {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+}
+
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+}
+

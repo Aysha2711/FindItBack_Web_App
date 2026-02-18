@@ -1,0 +1,168 @@
+
+.signup-container {
+  background: #f9f9f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.signup-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  padding: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+
+.signup-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #1c2b42;
+}
+
+.signup-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+
+.form-group {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.form-group small {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+
+.signup-btn {
+  width: 200px;
+  padding: 12px;
+  background: #1c2b42;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: block;
+  margin: 20px auto;
+}
+
+.signup-btn:hover{
+  background-color: #1f3e74;
+  color: #000;
+}
+
+.divider {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  line-height: 0.1em;
+  margin: 25px 0;
+  color: #777;
+}
+
+.divider span {
+  background: #f9f9f9;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.google { color: #db4437; }
+.facebook { color: #4267B2; }
+.apple { color: #000; }
+
+
+.signup-footer {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: #999;
+  background-color: #1c2b42;
+}
+
+.signup-footer-links {
+
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  gap: 12px;
+  margin-bottom: 8px;
+  width: 100%; 
+}
+
+.signup-footer-links a {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.signup-footer-links a:hover {
+  text-decoration: underline;
+}
+
+.signup-footer p {
+  font-size: 14px;
+  color: #aaa;
+}
+

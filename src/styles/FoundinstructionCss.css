@@ -1,0 +1,156 @@
+/* .found-instruction-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.back-button {
+  display: inline-block;
+  color: #1f2a48;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  color: #1c1c3a;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.post-btn {
+  background-color: #4f8ef7;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.post-btn:hover {
+  background-color: #3d7ae0;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1c1c3a;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.found-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.found-step-card {
+  background-color: #f7f9fc;
+  padding: 20px;
+  width: 230px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.step-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4f8ef7;
+  margin-bottom: 10px;
+}
+
+.found-step-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #1f2a48;
+}
+
+.found-step-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.tips-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.tip-card {
+  background-color: #f1f5ff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: #333;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.tip-card svg {
+  font-size: 1.2rem;
+  margin-top: 4px;
+  color: #2345a0;
+}
+
+.cta-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cta-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #1c1c3a;
+}
+
+.sub-text {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 10px;
+} */
